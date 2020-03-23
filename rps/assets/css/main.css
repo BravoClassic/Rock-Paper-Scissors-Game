@@ -1,0 +1,140 @@
+/* Rock Paper Scissors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("https://pngriver.com/wp-content/uploads/2018/04/Download-Chicken-PNG-7.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #cccccc;
+    width: 100%;
+    height: 100vh;
+    background-color: #23272a
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: #21de9f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2c2f33;
+    text-transform: capitalize;
+}
+
+main {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.scoreboard-main {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    color: white;
+}
+
+.scoreboard {
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px
+}
+
+.scoreboard p {
+    background: #7e2626;
+    /* margin-top: 10px; */
+}
+
+h2 {
+    width: 100%;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    width: 595px;
+    flex-direction: row;
+    padding: 3em 0 0;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.rock,
+.paper,
+.scissors {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21de9f;
+    border: 2px solid #21de9f;
+    border-color: #21de9f;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+    transform: scale(1.2);
+}
+
+.paper img {
+    width: 70%;
+    height: 70%;
+}
+
+.rock img {
+    width: 70%;
+    height: 70%;
+}
+
+.scissors img {
+    width: 75%;
+    height: 75%;
+}
+
+@media screen and (max-width:768px) {
+    .btns {
+        width: 100%;
+    }
+    .rock,
+    .paper,
+    .scissors {
+        width: 90px;
+        height: 90px;
+    }
+}
